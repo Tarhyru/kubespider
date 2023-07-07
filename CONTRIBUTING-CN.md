@@ -53,7 +53,7 @@ UID=${UID} GID=${GID} docker-compose up
 ```
 会自动构筑镜像，并监听 kubespider 下的文件变更自动重启
 
-### 其它
+### Tip
 停止容器
 ```sh
 docker-compose down
