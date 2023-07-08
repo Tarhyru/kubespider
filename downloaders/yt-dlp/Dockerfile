@@ -34,6 +34,6 @@ COPY --chmod=755 entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT [ "/entrypoint.sh" ]
 
-CMD ["server"]
+CMD ["python3", "/app/app/app.py"]
 
 EXPOSE 3082

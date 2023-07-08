@@ -39,25 +39,6 @@ If no new dependencies are added/updated, you can run the following command to r
 # Run it in Kubespider code directory
 docker cp kubespider kubespider:/app/ && docker restart kubespider
 ```
-## Another option for development
-After installation, execute the following command in the root directory:
-
-```sh
-UID=${UID} GID=${GID} docker-compose up
-```
-The image will be built automatically and will listen for file changes under kubespider and restart automatically.
-
-### Tip
-Stop the container:
-```sh
-docker-compose down
-```
-
-View the built image and delete it. After executing these commands, you can rebuild it:
-```sh
-docker-compose images 
-docker-compose rmi xxx
-```
 
 ## Give a PR
 Once you finish developing and do enough testing, you can create a PR in this repository. The maintainer will check and merge it as soon as possible.
